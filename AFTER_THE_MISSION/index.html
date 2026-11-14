@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>After the Mission — The Stories of NASA's Forgotten Explorers</title>
+  <meta name="description" content="An interactive space museum telling the stories of NASA machines left on the Moon, on Mars and in deep space.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Big+Shoulders+Display:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Navigation (same on every page) ===== -->
+  <header class="site-nav">
+    <a class="wordmark" href="index.html">After the Mission</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav class="nav-links" id="nav-links" aria-label="Main">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="explore.html" data-page="explore">Explore</a>
+      <a href="story.html" data-page="story">Their stories</a>
+      <a href="legacy.html" data-page="legacy">Legacy</a>
+      <a href="quiz.html" data-page="quiz">Quiz</a>
+      <a href="sources.html" data-page="sources">Sources</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero-planet" data-image="earthrise11" data-width="1800" data-background></div>
+      <div class="hero-copy">
+        <p class="hero-kicker">NASA Space Apps Challenge 2026</p>
+        <h1 class="hero-title"><span>After</span><span>the</span><span>Mission</span></h1>
+        <p class="hero-tagline">The stories of NASA's forgotten explorers.</p>
+        <p class="hero-intro">When a mission ends, the machine doesn't disappear. Landers still stand where they touched down. Rovers sit parked beside their last tracks. One spacecraft is still flying away from the Sun. This is where they are, and what they did.</p>
+        <div class="hero-actions">
+          <a class="button" href="explore.html">Start exploring</a>
+          <a class="button button-ghost" href="#explorers">Meet the explorers</a>
+        </div>
+      </div>
+
+      <aside class="manifest" aria-labelledby="manifest-title">
+        <h2 id="manifest-title">Where they are now</h2>
+        <ul id="manifest-list" class="manifest-list"></ul>
+      </aside>
+    </section>
+
+    <!-- ===== Destinations ===== -->
+    <section class="section" id="destinations">
+      <div class="section-head">
+        <h2>Three places they remain</h2>
+        <p>Each destination shapes what happens to a machine after its mission. On the airless Moon, nothing wears it away. On Mars, dust slowly settles on it. In deep space, nothing stops it.</p>
+      </div>
+      <div class="destination-panels" id="destination-panels"></div>
+    </section>
+
+    <!-- ===== Explorers ===== -->
+    <section class="section" id="explorers">
+      <div class="section-head">
+        <h2>Meet the explorers</h2>
+        <p>Six machines, from 1967 to 2024. Each one tells its own story in five chapters, from launch to legacy.</p>
+      </div>
+      <div class="explorer-rail" id="explorer-rail"></div>
+    </section>
+
+    <!-- ===== How stories work ===== -->
+    <section class="section how-to-read">
+      <div class="section-head">
+        <h2>Two voices in every story</h2>
+        <p>Each machine "speaks" to you, but we never mix imagination with history.</p>
+      </div>
+      <div class="read-pair">
+        <blockquote class="voice">
+          <p>I was only built to last a week. I kept going for nearly three months.</p>
+          <footer>Imagined voice — Sojourner</footer>
+        </blockquote>
+        <div class="record">
+          <p class="record-label">Mission record</p>
+          <p>Sojourner was designed for a mission of 7 sols. It worked for 83 sols and drove about 100 metres.</p>
+        </div>
+      </div>
+      <p class="read-note">The glowing quotes are creative narration. The panels marked "Mission record" are verified facts, with sources listed for every story.</p>
+    </section>
+
+    <!-- ===== Did you know ===== -->
+    <section class="section dyk" aria-labelledby="dyk-title">
+      <div class="dyk-card">
+        <h2 id="dyk-title">Did you know?</h2>
+        <p id="dyk-text" class="dyk-text"></p>
+        <div class="dyk-footer">
+          <span id="dyk-count"></span>
+          <button type="button" class="button button-small" id="dyk-next">Show another fact</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Closing ===== -->
+    <section class="section closing">
+      <h2>Their work isn't over</h2>
+      <p>A mirror on the Moon still reflects lasers from Earth. A helicopter on Mars was set up to keep a diary nobody can read yet. Find out what these machines left us.</p>
+      <div class="hero-actions">
+        <a class="button" href="legacy.html">See their legacy</a>
+        <a class="button button-ghost" href="quiz.html">Take the quiz</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>After the Mission — a NASA Space Apps Challenge 2026 project. Images courtesy of NASA, archived on Wikimedia Commons. <a href="sources.html">Sources and credits</a>.</p>
+    <p class="footer-note">NASA does not endorse this project. Creative narration is clearly labelled and is not historical record.</p>
+  </footer>
+
+  <script src="js/equipment.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

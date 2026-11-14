@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore — After the Mission</title>
+  <meta name="description" content="Explore NASA equipment left on the Moon, on Mars and in deep space.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Big+Shoulders+Display:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="explore">
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Navigation (same on every page) ===== -->
+  <header class="site-nav">
+    <a class="wordmark" href="index.html">After the Mission</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav class="nav-links" id="nav-links" aria-label="Main">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="explore.html" data-page="explore">Explore</a>
+      <a href="story.html" data-page="story">Their stories</a>
+      <a href="legacy.html" data-page="legacy">Legacy</a>
+      <a href="quiz.html" data-page="quiz">Quiz</a>
+      <a href="sources.html" data-page="sources">Sources</a>
+    </nav>
+  </header>
+
+  <main id="main" class="page">
+    <header class="page-head">
+      <h1>Where they remain</h1>
+      <p>Choose a destination to see the machines still there. Select any card to open its full story.</p>
+    </header>
+
+    <div class="dest-tabs" role="tablist" aria-label="Choose a destination">
+      <button type="button" class="dest-tab dest-all" role="tab" data-filter="all"><span class="tab-orb" aria-hidden="true"></span><span class="tab-name">All</span><span class="tab-sub">6 explorers</span></button>
+      <button type="button" class="dest-tab dest-moon" role="tab" data-filter="moon"><span class="tab-orb" aria-hidden="true"></span><span class="tab-name">The Moon</span><span class="tab-sub">Eagle, Surveyor 3</span></button>
+      <button type="button" class="dest-tab dest-mars" role="tab" data-filter="mars"><span class="tab-orb" aria-hidden="true"></span><span class="tab-name">Mars</span><span class="tab-sub">Sojourner, Opportunity, Ingenuity</span></button>
+      <button type="button" class="dest-tab dest-deep" role="tab" data-filter="deep"><span class="tab-orb" aria-hidden="true"></span><span class="tab-name">Deep Space</span><span class="tab-sub">Pioneer 10</span></button>
+    </div>
+
+    <div class="destination-intro" id="destination-intro" aria-live="polite"></div>
+    <div class="explore-grid" id="explore-grid"></div>
+
+    <aside class="status-key" aria-labelledby="status-key-title">
+      <h2 id="status-key-title">What the status labels mean</h2>
+      <dl>
+        <div><dt><span class="status status-left">Left in place</span></dt><dd>Deliberately left behind as part of the plan, like Eagle's descent stage, which served as a launch pad.</dd></div>
+        <div><dt><span class="status status-inactive">Inactive on the surface</span></dt><dd>Landed and worked, then lost power or contact. Still sitting where it stopped.</dd></div>
+        <div><dt><span class="status status-grounded">Grounded, out of contact</span></dt><dd>Can no longer move or fly, and no longer talks to Earth. Ingenuity was programmed to keep recording data on board.</dd></div>
+        <div><dt><span class="status status-travelling">Silent, still travelling</span></dt><dd>No longer sending signals, but still moving through space.</dd></div>
+      </dl>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>After the Mission — a NASA Space Apps Challenge 2026 project. Images courtesy of NASA, archived on Wikimedia Commons. <a href="sources.html">Sources and credits</a>.</p>
+    <p class="footer-note">NASA does not endorse this project. Creative narration is clearly labelled and is not historical record.</p>
+  </footer>
+
+  <script src="js/equipment.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/explore.js"></script>
+</body>
+</html>
