@@ -2,6 +2,7 @@
 ### The Stories of NASA's Forgotten Explorers
 *NASA Space Apps Challenge 2026 — "Abandoned but not Forgotten: Storytelling about NASA's Discarded Equipment on the Moon and Mars"*
 - live website : https://mirapraveena.github.io/AfterTheMission/index.html
+  
 An interactive digital space museum for school students and casual space fans. Six NASA machines tell their own stories (in a clearly labelled *imagined voice*) alongside verified history (the *mission record*), from launch to legacy.
 
 | Explorer | Destination | Current status |
